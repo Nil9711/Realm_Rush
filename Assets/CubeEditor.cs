@@ -23,16 +23,16 @@ public class CubeEditor : MonoBehaviour
     private void SnapToGrid()
     {
         transform.position = new Vector3(
-            waypoint.GetGridPos().x,
+            waypoint.GetGridPos().x * waypoint.GetGridSize(),
             0f,
-            waypoint.GetGridPos().y);
+            waypoint.GetGridPos().y * waypoint.GetGridSize() );
     }
 
     private void UpdateLabel()
     {
         int gridSize = waypoint.GetGridSize();
         TextMesh textMesh = GetComponentInChildren<TextMesh>();
-        textMesh.text = waypoint.GetGridPos().x / gridSize + "," + waypoint.GetGridPos().y / gridSize;
-        gameObject.name = waypoint.GetGridPos().x / gridSize + "," + waypoint.GetGridPos().y / gridSize;
+        textMesh.text = waypoint.GetGridPos().x + "," + waypoint.GetGridPos().y;
+        gameObject.name = waypoint.GetGridPos().x + "," + waypoint.GetGridPos().y;
     }
 }
