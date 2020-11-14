@@ -4,12 +4,13 @@ using System.Collections.Generic;
 using UnityEditorInternal;
 using UnityEngine;
 
+
 public class PathFinder : MonoBehaviour
 {
     Dictionary<Vector2Int, Waypoint> grid = new Dictionary<Vector2Int, Waypoint>();
     Queue<Waypoint> queue = new Queue<Waypoint>();
-    [SerializeField] Waypoint start;
-    [SerializeField] Waypoint end;
+    [SerializeField] Waypoint start = null;
+    [SerializeField] Waypoint end = null;
     public bool isRunning = true;
     Waypoint searchCenter;
     Vector2Int[] directions =
