@@ -1,6 +1,7 @@
 ﻿# Complete Unity Developer 2.0 - Section 5 - Realm Rush
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 This is the long-awaited sequel to the Complete Unity Developer - one of the most successful e-learning courses on the internet! Completely re-worked from scratch with brand-new projects and our latest teaching techniques. You will benefit from the fact we have already taught over 300,000 students game development, many shipping commercial games as a result.
 
 You're welcome to download, fork or do whatever else legal with all the files! The real value is in our huge, high-quality online tutorials that accompany this repo.
@@ -404,6 +405,8 @@ Create a simple co-routine from scratch on your own. Remember "Blooms Taxonomy"
 
 Find the closest of two transforms.
 =======
+=======
+>>>>>>> parent of 0e0e8a6... Update README.md
 When hitpooins < 0 , kill enemy 
 
 killEnemy: destroy game object , 
@@ -413,4 +416,7 @@ check distance :
 define attack range , check enemy exists , check distance using vector3.distance , 
 if the distance < attack range --> shoot (by enabling particleSystem) 
 (Vector3.Distance(enemy, tower)) 
+<<<<<<< HEAD
+>>>>>>> parent of 0e0e8a6... Update README.md
+=======
 >>>>>>> parent of 0e0e8a6... Update README.md
